@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignUpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="20dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:src="@drawable/signimg"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:id="@+id/loginName"
+                android:layout_marginTop="22dp"
+                android:padding="8dp"
+                android:hint="Name"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:background="@drawable/text_area_shap"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:id="@+id/loginEmail"
+                android:layout_marginTop="18dp"
+                android:padding="8dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="8dp"
+                android:background="@drawable/text_area_shap"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:id="@+id/loginPassword"
+                android:layout_marginTop="18dp"
+                android:padding="8dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/baseline_lock_person_24"
+                android:drawablePadding="8dp"
+                android:background="@drawable/text_area_shap"/>
+            <Button
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:id="@+id/signupBtn"
+                android:textSize="18sp"
+                android:text="Signup"
+                app:cornerRadius = "30dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
